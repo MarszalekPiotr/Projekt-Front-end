@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona</title>
+    <link rel="shortcut icon" href="./images/world-wide-web.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;600&family=Roboto+Mono:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".toSec2").click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#sekcja2").offset().top
+                }, 2000);
+            });
+        });
+
+        $(document).ready(function () {
+            $(".toSec1").click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#sekcja1").offset().top
+                }, 2000);
+            });
+        });
+
+        $(document).ready(function () {
+            $(".toSec3").click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#sekcja3").offset().top
+                }, 2000);
+            });
+        });
+
+
+
+
+        $(document).ready(function () {
+            $(".toSec4").click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#sekcja4").offset().top
+                }, 2000);
+            });
+        });
+    </script>
+
+
+
+    <script>
+
+        $(window).scroll(function () {
+            var height = $(window).scrollTop();
+
+            if (height > 600) {
+                $('.side-menu-container').show();
+                $('header').hide();
+            }
+            else {
+                $('.side-menu-container').hide();
+                $('header').show();
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+    <style>
+        /* i:hover {
+            cursor: default;
+            transform: rotate(360deg);
+            transition: all 0.3s ease-in-out 0s;
+        } */
+
+        body {
+            margin: 0px;
+        }
+
+        .side-menu-container,
+        .side-menu,
+        .side-menu>a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+        }
+
+        .side-menu-container {
+            position: fixed;
+            height: 100vh;
+            left: 0px;
+        }
+
+        .side-menu>a {
+            margin: 5px 0px;
+            padding: 5px;
+            height: 40px;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .side-menu>a:hover {
+            margin: 5px 0px;
+            height: 40px;
+            color: #fff;
+            background-color: #000;
+        }
+
+        .AssideDives {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+
+
+</head>
+
+<body style="margin: 0px;">
+
+
+    <div class="side-menu-container">
+        <nav class="side-menu">
+            <a class="toSec1" href="#sekcja1">
+                <div class="AssideDives"><i> <svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-square-1" width="44" height="44" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 16v-8l-2 2" />
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                        </svg> </i></div>
+            </a>
+            <a class="toSec2" href="#sekcja2">
+                <div><i class="fas fa-question">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-2" width="44"
+                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 10a2 2 0 1 1 4 0c0 .591 -.417 1.318 -.816 1.858l-3.184 4.143l4 0" />
+                            <circle cx="12" cy="12" r="9" />
+                        </svg>
+                    </i></div>
+            </a>
+            <a class="toSec3" href="#sekcja3">
+                <div><i class="fas fa-briefcase"> <svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-square-3" width="44" height="44" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 12a2 2 0 1 0 -2 -2" />
+                            <path d="M10 14a2 2 0 1 0 2 -2" />
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                        </svg></i></div>
+            </a>
+            <a class="toSec4" href="#sekcja4">
+                <div><i class="fas fa-address-card"> <svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-circle-4" width="44" height="44" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M13 16v-8l-4 6h5" />
+                            <circle cx="12" cy="12" r="9" />
+                        </svg></i></div>
+            </a>
+        </nav>
+    </div>
+
+
+
+    <header>
+        <nav>
+
+
+
+            <div class="opcja1">
+                <p class="logo"> Nazwa </p>
+                <a class="nav-top toSec1" href="#sekcja1">Sekcja1</a>
+                <a class="nav-top toSec2" href="#sekcja2">Sekcja2</a>
+                <a class="nav-top toSec3" href="#sekcja3">Sekcja3</a>
+                <a class="nav-top toSec4" href="#sekcja4">Sekcja4</a>
+            </div>
+
+            <div class="opcja2">
+                <i class="logo"><svg id="logo" xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-alert-circle" width="44" height="44" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="12" r="9" />
+                        <line x1="12" y1="8" x2="12" y2="12" />
+                        <line x1="12" y1="16" x2="12.01" y2="16" />
+                    </svg></i>
+                <a class="nav-top toSec1" href="#sekcja1">Sekcja1</a>
+                <a class="nav-top toSec2" href="#sekcja2">Sekcja2</a>
+                <a class="nav-top toSec3" href="#sekcja3">Sekcja3</a>
+                <a class="nav-top toSec4" href="#sekcja4">Sekcja4</a>
+            </div>
+
+            <div class="opcja3">
+                <i class="logo"><svg id="logo" xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-alert-circle" width="44" height="44" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="12" r="9" />
+                        <line x1="12" y1="8" x2="12" y2="12" />
+                        <line x1="12" y1="16" x2="12.01" y2="16" />
+                    </svg></i>
+                <a class="nav-top toSec1" href="#sekcja1"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-square-1" width="44" height="44" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 16v-8l-2 2" />
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                    </svg></a>
+                <a class="nav-top toSec2" href="#sekcja2"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-circle-2" width="44" height="44" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 10a2 2 0 1 1 4 0c0 .591 -.417 1.318 -.816 1.858l-3.184 4.143l4 0" />
+                        <circle cx="12" cy="12" r="9" />
+                    </svg></a>
+                <a class="nav-top toSec3" href="#sekcja3"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-square-3" width="44" height="44" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 12a2 2 0 1 0 -2 -2" />
+                        <path d="M10 14a2 2 0 1 0 2 -2" />
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                    </svg></a>
+                <a class="nav-top toSec4" href="#sekcja4"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-circle-4" width="44" height="44" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M13 16v-8l-4 6h5" />
+                        <circle cx="12" cy="12" r="9" />
+                    </svg></a>
+            </div>
+
+
+
+        </nav>
+
+    </header>
+
+
+    <div class="LandingPage">
+        <img src="http://www.embiznes.pl/wp-content/uploads/2011/07/87581.jpg" alt="">
+
+    </div>
+
+
+
+    <div class=" maincontainer container ">
+        <div class="container" id="sekcja1">
+            <div class="img">
+                <img class="img" src="https://zasoby.ekologia.pl/animal/a/1657/owczarek.jpg" alt="Owczarek Niemiecki">
+                <p>Owczarek niemiecki</p>
+            </div>
+        </div>
+        <hr>
+        <div class="container" id=sekcja2>
+
+            <h1> Nagłówek1 sekcja 1 </h1>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam voluptatum unde soluta nulla et. Fuga,
+                eligendi nam. Nulla? </p>
+
+
+
+            <a href="https://www.google.pl/" target="_blank"> Google </a>
+
+            <h2> Nagłówek 2 sekcji 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, laborum?</p>
+            <h3> Nagłówek3 sekcja1</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ab obcaecati atque. </p>
+
+
+            <h1> Nagłówek 1 sekcja 2 </h1>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam exercitationem dolore dicta ipsa
+                provident
+                numquam id tempore illum, aspernatur ut? </p>
+
+            <hr>
+        </div>
+
+
+
+        <div class="container" id=sekcja3>
+            <h1> Nagłówek 1 sekcja 3 </h1>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi ipsum id similique? Dignissimos numquam
+                eaque
+                corrupti cumque harum?
+
+            </p>
+
+
+            <h1> Nagłówek 1 sekcja 4 </h1>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum dolor laborum pariatur molestias
+                similique
+                magnam facere blanditiis, et praesentium vitae voluptatibus quia animi dolore velit explicabo vel quae,
+                voluptatum eius?</p>
+
+            <div class="container" id="sekcja5">
+                <img class="img" src="./images/5c42e1d5985fc_o_medium.jpg" alt="mały pies">
+                <p>Mały pies</p>
+            </div>
+            <hr>
+        </div>
+
+
+        <div class="container" id=sekcja4>
+            <div class="sekcjalist">
+                <div class="lista">
+                    <ol>
+                        <li> Element1</li>
+                        <li>Element2</li>
+                        <li>Element3</li>
+                    </ol>
+                </div>
+                <div class="lista">
+                    <ul>
+                        <li>Element1</li>
+                        <li>Element2</li>
+                        <li>Element3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <table>
+            <thead style="background-color: bisque;">
+                <tr>
+                    <th>Kolumna1</th>
+                    <th>Kolumna2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Element1</th>
+                    <th>Element2</th>
+                </tr>
+                <tr>
+                    <th>Element1</th>
+                    <th>Element2</th>
+                </tr>
+
+            </tbody>
+        </table>
+        <hr>
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p> Piotr Marszalek 2022 </p> <img
+            src="https://img.icons8.com/ios-glyphs/30/000000/creative-commons-all-rights-reserved.png"
+            alt="znak copyright" />
+    </footer>
+
+
+
+</body>
+
+</html>
